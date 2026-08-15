@@ -1,0 +1,89 @@
+
+
+:root {
+  /* =========================
+     Primary
+  ========================= */
+  --color-primary: #EF394E;
+  --color-primary-hover: #D92D42;
+  --color-primary-light: #FFF1F2;
+
+
+  /* =========================
+     Text
+  ========================= */
+  --color-text-primary: #3F4064;
+  --color-text-secondary: #62666D;
+  --color-text-muted: #A1A3A8;
+  --color-text-disabled: #C0C2C5;
+  --color-text-white: #FFFFFF;
+
+
+  /* =========================
+     Background
+  ========================= */
+  --color-bg: #F5F5F5;
+  --color-bg-white: #FFFFFF;
+  --color-bg-light: #F8F8F8;
+  --color-bg-dark: #3F4064;
+
+
+  /* =========================
+     Border
+  ========================= */
+  --color-border: #E0E0E2;
+  --color-border-light: #F0F0F1;
+  --color-border-dark: #C8C8CA;
+
+
+  /* =========================
+     Product / Price
+  ========================= */
+  --color-price: #3F4064;
+  --color-discount: #D32F2F;
+  --color-discount-bg: #D32F2F;
+  --color-old-price: #A1A3A8;
+
+
+  /* =========================
+     Status
+  ========================= */
+  --color-success: #2DBE64;
+  --color-success-light: #E8F7EE;
+
+  --color-warning: #F9A825;
+  --color-warning-light: #FFF8E1;
+
+  --color-error: #EF394E;
+  --color-error-light: #FFF1F2;
+
+  --color-info: #19BFD3;
+  --color-info-light: #E8FAFC;
+
+
+  /* =========================
+     Interactive
+  ========================= */
+  --color-link: #19BFD3;
+  --color-link-hover: #00A6B8;
+
+  --color-hover: #F5F5F5;
+  --color-active: #EEEEF0;
+
+
+  /* =========================
+     Shadow
+  ========================= */
+  --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.15);
+
+
+/* 
+extra colors 
+*/
+--black-solid:rgba(0, 0, 0, 0);
+}
+
+
+
