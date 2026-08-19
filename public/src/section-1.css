@@ -1,10 +1,10 @@
 .section-1 {
   width: 70%;
   height: 100px;
-  margin: 24px 288px 0px;
-  background-color: antiquewhite;
-  padding: 0px 16px;
+  margin: 24px auto 0px;
 
+  padding: 0px 16px;
+  /* section 1 product 1 start  */
   .products-1 {
     display: flex;
     justify-content: space-between;
@@ -17,7 +17,7 @@
     }
     .products-1-ch {
       display: flex;
-      background-color: black;
+
       width: 96px;
       height: 77px;
       justify-content: center;
@@ -40,8 +40,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
 
         .products-1-ch-ch1-svg {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          display: block;
+        }
+        .products-1-ch-ch1-svg-1 {
           object-fit: cover;
           width: 24px;
           height: 24px;
@@ -49,4 +57,5 @@
       }
     }
   }
+  /* section 1 product 1 end  */
 }

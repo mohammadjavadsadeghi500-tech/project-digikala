@@ -1,1 +1,0 @@
-<svg data-testid="quantity-decrease" data-cro-id="cart-subtract-quantity" style="width: 18px; height: 18px; fill: var(--color-icon-primary);" xmlns="http://www.w3.org/2000/svg"><defs><symbol id="removeSimple" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H4v-2h16z"></path></symbol></defs><use href="#removeSimple"></use></svg>
