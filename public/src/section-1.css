@@ -1,3 +1,8 @@
+body {
+  font-family: "IRANYekanWeb";
+  font-weight: 700;
+}
+
 .section-1 {
   width: 70%;
   height: 100px;
