@@ -1,34 +1,40 @@
-.swiper {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+/* ================= Slider 1 ================= */
+.mySwiper-1 {
   width: 100%;
   height: 400px;
-
   position: relative !important;
 }
 
-.swiper-slide {
+.mySwiper-1 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #444;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
 }
 
-.swiper {
-  &:hover {
-    .swiper-button-prev,
-    .swiper-button-next {
-      opacity: 1 !important;
-      visibility: visible !important;
-    }
-  }
+.mySwiper-1 .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mySwiper-1:hover .swiper-button-prev,
+.mySwiper-1:hover .swiper-button-next {
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 .slider-1-pic {
@@ -36,8 +42,8 @@
   width: 100%;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+.mySwiper-1 .swiper-button-prev,
+.mySwiper-1 .swiper-button-next {
   position: absolute !important;
   bottom: 20px !important;
   top: auto !important;
@@ -49,33 +55,35 @@
   opacity: 0 !important;
   visibility: hidden !important;
   transition: 0.3s !important;
-
-  &::after {
-    font-size: 12px !important;
-  }
-
-  svg {
-    width: 50%;
-    height: 50%;
-  }
 }
 
-.swiper-button-prev {
+.mySwiper-1 .swiper-button-prev::after,
+.mySwiper-1 .swiper-button-next::after {
+  font-size: 12px !important;
+}
+
+.mySwiper-1 .swiper-button-prev svg,
+.mySwiper-1 .swiper-button-next svg {
+  width: 50%;
+  height: 50%;
+}
+
+.mySwiper-1 .swiper-button-prev {
   right: 63px !important;
 }
 
-.swiper-button-next {
+.mySwiper-1 .swiper-button-next {
   right: 15px !important;
 }
 
-.swiper-pagination-bullet {
+.mySwiper-1 .swiper-pagination-bullet {
   width: 8px;
   height: 8px;
   opacity: 0.4;
   background-color: #848487 !important;
 }
 
-.swiper-pagination-bullet-active {
+.mySwiper-1 .swiper-pagination-bullet-active {
   width: 15px !important;
   border-radius: 10px !important;
   transition: all 600ms;
