@@ -27,35 +27,66 @@ var swiper1 = new Swiper(".mySwiper-1", {
 // first slider end
 
 // slider 2 start
-function toggleSlider2PrevButton(swiper) {
-  const prevBtn = swiper.el.querySelector(".swiper-button-prev");
-  if (!prevBtn) return;
-  if (swiper.isBeginning) {
-    prevBtn.classList.remove("is-visible");
-  } else {
-    prevBtn.classList.add("is-visible");
-  }
-}
 
 var swiper2 = new Swiper(".mySwiper-2", {
   slidesPerView: "auto",
   centeredSlides: false,
   spaceBetween: 10,
-  pagination: {
-    el: ".swiper-pagination",
-    type: "fraction",
-  },
+  slidesOffsetAfter: 10,
+
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+
   on: {
     init: function () {
-      toggleSlider2PrevButton(this);
+      updateSlider2Buttons(this);
     },
+
     slideChange: function () {
-      toggleSlider2PrevButton(this);
+      updateSlider2Buttons(this);
     },
   },
 });
+
+function updateSlider2Buttons(swiper) {
+  const nextBtn = swiper.el.querySelector(".swiper-button-next");
+  const prevBtn = swiper.el.querySelector(".swiper-button-prev");
+
+  if (!nextBtn || !prevBtn) return;
+
+  // ابتدای اسلایدر
+  if (swiper.isBeginning) {
+    prevBtn.classList.remove("is-visible");
+  } else {
+    prevBtn.classList.add("is-visible");
+  }
+
+  // انتهای اسلایدر
+  if (swiper.isEnd) {
+    nextBtn.classList.remove("is-visible");
+  } else {
+    nextBtn.classList.add("is-visible");
+  }
+}
+
+// وقتی روی Next در انتهای اسلایدر کلیک شد
+swiper2.el
+  .querySelector(".swiper-button-next")
+  .addEventListener("click", function () {
+    if (swiper2.isEnd) {
+      this.classList.remove("is-visible");
+    }
+  });
+
+// وقتی روی Prev در ابتدای اسلایدر کلیک شد
+swiper2.el
+  .querySelector(".swiper-button-prev")
+  .addEventListener("click", function () {
+    if (swiper2.isBeginning) {
+      this.classList.remove("is-visible");
+    }
+  });
+
 // slider 2 end
