@@ -26,14 +26,11 @@
   align-items: center;
   margin-top: 24px;
 
-  .section3-child {
+  .section3-child-hard {
     width: 1336px;
     height: 314px;
-    background: linear-gradient(
-      225deg,
-      rgb(210, 44, 78) 0%,
-      rgb(238, 56, 78) 100%
-    );
+    background: rgb(113, 186, 43);
+
     display: grid;
     grid-template-columns: 6fr 1fr;
     border-radius: 30px;
