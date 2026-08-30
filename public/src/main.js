@@ -90,3 +90,37 @@ swiper2.el
   });
 
 // slider 2 end
+
+// اسلایدر شگفت انگیز سبز
+// ===== اسلایدر سوم (سبز) =====
+
+// ===== اسلایدر دوم (سبز) =====
+var swiper3 = new Swiper(".mySwiper-3", {
+  slidesPerView: "auto",
+  centeredSlides: false,
+  spaceBetween: 10,
+  slidesOffsetAfter: 10,
+  navigation: {
+    nextEl: ".swiper-button-next-3",
+    prevEl: ".swiper-button-prev-3",
+  },
+  on: {
+    init: function () { updateSlider3Buttons(this); },
+    slideChange: function () { updateSlider3Buttons(this); },
+  },
+});
+
+function updateSlider3Buttons(swiper) {
+  const nextBtn = swiper.el.querySelector(".swiper-button-next-3");
+  const prevBtn = swiper.el.querySelector(".swiper-button-prev-3");
+  if (!nextBtn || !prevBtn) return;
+  swiper.isBeginning ? prevBtn.classList.remove("is-visible") : prevBtn.classList.add("is-visible");
+  swiper.isEnd ? nextBtn.classList.remove("is-visible") : nextBtn.classList.add("is-visible");
+}
+
+swiper3.el.querySelector(".swiper-button-next-3").addEventListener("click", function () {
+  if (swiper3.isEnd) this.classList.remove("is-visible");
+});
+swiper3.el.querySelector(".swiper-button-prev-3").addEventListener("click", function () {
+  if (swiper3.isBeginning) this.classList.remove("is-visible");
+});

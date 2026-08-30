@@ -206,6 +206,17 @@
       }
 
       .s-5-child-4 {
+        width: 100%;
+        height: 281px;
+        background-color: lightslategray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       .s-5-grandchild{
+        width:1304px ;
+        height: 100%;
+        background-color: lime;
+       }
       }
     }
   }

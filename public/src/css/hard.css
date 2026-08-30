@@ -16,25 +16,23 @@
   src: url(../fonts/IRANYekanWeb.woff2);
 }
 
-/* ================= Section 3 / Slider 2 ================= */
+/* ================= مشترک بین هر دو اسلایدر ================= */
 .section3 {
   width: 100%;
   height: 314px;
-
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 24px;
 
-  .section3-child-hard {
+  .section3-child {
     width: 1336px;
     height: 314px;
-    background: rgb(113, 186, 43);
-
     display: grid;
     grid-template-columns: 6fr 1fr;
     border-radius: 30px;
     overflow: hidden;
+    background: var(--slider-bg);
 
     .swiper {
       width: 100%;
@@ -48,14 +46,11 @@
     .swiper-slide {
       text-align: center;
       font-size: 18px;
-
       display: flex;
       flex-direction: column;
-
       width: 164px !important;
       height: 274px;
 
-      /* مبهم هستش برام  */
       .swiper-slide-child {
         .swiper-slide-children1 {
           .swiper-slide-children1-img {
@@ -65,7 +60,7 @@
           }
         }
       }
-      /* انتهای سوال مبهمه  */
+
       .swiper-slide-children2 {
         width: 100%;
         height: 110px;
@@ -90,7 +85,6 @@
             background-color: #ffffff;
             display: flex;
             font-weight: 400 !important;
-
             font-size: 14px !important;
             font-weight: bold;
           }
@@ -107,6 +101,7 @@
               width: 80%;
               height: 100%;
               background-color: #ffffff;
+
               .swiper-slide-children2-grandchild-2-one-child1 {
                 display: flex;
                 width: 100%;
@@ -114,6 +109,7 @@
                 justify-content: flex-end;
                 background-color: #ffffff;
                 font-weight: 400 !important;
+
                 .swiper-slide-children2-grandchild-2-one-child1-right {
                   width: 34px;
                   height: 16px;
@@ -142,7 +138,6 @@
                 width: 100%;
                 height: 24px;
                 align-items: center;
-
                 background-color: #ffffff;
 
                 .swiper-slide-children2-grandchild-2-one-child2-right {
@@ -154,12 +149,12 @@
                   font-weight: 700;
                   color: var(--text-neutral-800);
                 }
-
                 .swiper-slide-children2-grandchild-2-one-child2-left {
                   width: 16px;
                   height: 16px;
                   background-color: #ffffff;
                   display: flex;
+
                   .svg-cards-useful {
                     width: 100%;
                     height: 100%;
@@ -184,55 +179,6 @@
       object-fit: cover;
     }
 
-    .mySwiper-2 .swiper-button-next,
-    .mySwiper-2 .swiper-button-prev {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 32px;
-      height: 32px;
-      background-color: #fff;
-      border-radius: 50%;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-      z-index: 10;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      visibility: hidden;
-      transition:
-        opacity 0.3s ease,
-        visibility 0.3s ease;
-    }
-
-    .mySwiper-2 .swiper-button-next {
-      left: 10px;
-      right: auto;
-    }
-
-    .mySwiper-2 .swiper-button-prev {
-      right: 10px;
-      left: auto;
-    }
-
-    .mySwiper-2 .swiper-button-next.is-visible,
-    .mySwiper-2 .swiper-button-prev.is-visible {
-      opacity: 1;
-      visibility: visible;
-      width: 32px !important;
-      height: 32px !important;
-      & img {
-        width: 32px;
-        height: 32px;
-      }
-    }
-
-    .mySwiper-2 .swiper-button-next::after,
-    .mySwiper-2 .swiper-button-prev::after {
-      font-size: 44px;
-      font-weight: 700;
-      color: #d22c4e;
-    }
     .section-3-svg-next {
       width: 100%;
       height: 100%;
@@ -263,6 +209,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
         .slider2-side-child-1-svg {
           width: 100%;
           height: 100%;
@@ -272,16 +219,15 @@
         width: 100%;
         height: 72px;
         display: flex;
-        justify-content: space-between;
-        display: flex;
         flex-direction: column;
+        justify-content: space-between;
+
         .timer-box {
           display: flex;
           align-items: center;
           justify-content: center;
           gap: 6px;
         }
-
         .timer-box-item {
           background-color: #fff;
           border-radius: 5px;
@@ -292,14 +238,12 @@
           justify-content: center;
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         }
-
         .timer-box-item span {
           font-family: inherit;
           font-weight: 700;
           font-size: 16px;
           color: #1a1a1a;
         }
-
         .timer-box-separator {
           display: flex;
           flex-direction: column;
@@ -307,17 +251,16 @@
           justify-content: center;
           gap: 4px;
         }
-
         .timer-box-separator .dot {
           width: 2px;
           height: 2px;
           border-radius: 50%;
           background-color: #fff;
         }
-
         .slider2-side-child-2-img {
           width: 100%;
           height: 28px;
+
           .slider2-side-child-2-svg {
             width: 100%;
             height: 100%;
@@ -349,6 +292,7 @@
         .slider2-side-child-3-img {
           width: 16px;
           height: 16px;
+
           .slider2-side-child-3-svg {
             width: 100%;
             height: 100%;
@@ -359,20 +303,27 @@
   }
 }
 
-.swiper-button-disabled {
-  width: 32px !important;
-  height: 32px !important;
-  & img {
-    width: 100% !important;
-    height: 100% !important;
-  }
+/* ================= رنگ هر اسلایدر ================= */
+.slider-2 {
+  --slider-bg: linear-gradient(
+    225deg,
+    rgb(210, 44, 78) 0%,
+    rgb(238, 56, 78) 100%
+  );
+}
+.slider-3 {
+  --slider-bg: linear-gradient(
+    225deg,
+    rgb(20, 120, 60) 0%,
+    rgb(34, 160, 80) 100%
+  );
 }
 
+/* ================= دکمه‌های اسلایدر قرمز (mySwiper-2) — با JS هماهنگ: nextEl=".swiper-button-next", prevEl=".swiper-button-prev" ================= */
 .mySwiper-2 .swiper-button-next,
 .mySwiper-2 .swiper-button-prev {
   position: absolute;
   top: 50%;
-  margin-top: 0;
   transform: translateY(-50%);
   width: 32px;
   height: 32px;
@@ -383,45 +334,85 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /* هر دو دکمه پیش‌فرض محو هستن، فقط با کلاس is-visible نمایان میشن */
   opacity: 0;
   visibility: hidden;
   transition:
     opacity 0.3s ease,
     visibility 0.3s ease;
 }
-
-.mySwiper-2 .swiper-button-next {
-  left: 10px !important;
-  right: auto !important;
-}
-
 .mySwiper-2 .swiper-button-prev {
-  right: 10px !important;
-  left: auto !important;
+  left: 10px;
+  right: auto;
 }
-
+.mySwiper-2 .swiper-button-next {
+  right: 10px;
+  left: auto;
+}
 .mySwiper-2 .swiper-button-next.is-visible,
 .mySwiper-2 .swiper-button-prev.is-visible {
   opacity: 1;
   visibility: visible;
-  width: 32px !important;
-  height: 32px !important;
-  & img {
-    width: 32px;
-    height: 32px;
-  }
 }
-
 .mySwiper-2 .swiper-button-next::after,
 .mySwiper-2 .swiper-button-prev::after {
   font-size: 44px;
   font-weight: 700;
   color: #d22c4e;
 }
+
+/* ================= دکمه‌های اسلایدر سبز (mySwiper-3) — با JS هماهنگ: nextEl=".swiper-button-next-3", prevEl=".swiper-button-prev-3" ================= */
+.mySwiper-3 .swiper-button-next-3,
+.mySwiper-3 .swiper-button-prev-3 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+.mySwiper-3 .swiper-button-prev-3 {
+  left: 10px;
+  right: auto;
+}
+.mySwiper-3 .swiper-button-next-3 {
+  right: 10px;
+  left: auto;
+}
+.mySwiper-3 .swiper-button-next-3.is-visible,
+.mySwiper-3 .swiper-button-prev-3.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+.mySwiper-3 .swiper-button-next-3::after,
+.mySwiper-3 .swiper-button-prev-3::after {
+  font-size: 44px;
+  font-weight: 700;
+  color: #229a50;
+}
+
+/* ================= مشترک ================= */
+.swiper-button-disabled {
+  width: 32px !important;
+  height: 32px !important;
+
+  & img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
 .swiper-slide-children1-border-right {
   border-top-right-radius: 10px;
-
   overflow: hidden;
 }
