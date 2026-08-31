@@ -8,7 +8,7 @@
 .footer-body {
   width: 100%;
   height: 1065px;
-  background-color: gray;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +20,6 @@
   .footer-child {
     width: 1676px;
     height: 970px;
-    background-color: lightslategray;
     padding: 0px 20px;
     display: flex;
     flex-direction: column;
@@ -188,7 +187,6 @@
       width: 1636px;
       height: 300px;
 
-      background-color: lightcoral;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -197,7 +195,6 @@
       .footer-child4-gch1 {
         width: 25%;
         height: 100%;
-        background-color: lightseagreen;
         display: flex;
         flex-direction: column;
         margin-top: 30px;
@@ -298,7 +295,7 @@
     justify-content: center;
     border-radius: 13px;
     color: rgb(224, 224, 226);
-    background-color: rgba(128, 128, 128, 0.473);
+    background-color: rgba(128, 128, 128, 0.273);
     border: none;
     cursor: pointer;
     .footer-child4-gch1-text {
@@ -313,11 +310,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(128, 128, 128, 0.196);
+    background-color: rgba(128, 128, 128, 0.096);
     border-radius: 13px;
     overflow: hidden;
     direction: rtl;
     padding: 8px 12px;
+    margin-left: 5px;
 
     .input-footer {
       width: 100%;
@@ -406,7 +404,6 @@
 .footer-child6 {
   width: 1636px;
   height: 225px;
-  background-color: limegreen;
   padding: 32px 0px;
   display: flex;
   justify-content: space-between;
@@ -440,7 +437,6 @@
   .footer-child6-right {
     width: calc(100% - 468px);
     height: 110px;
-    background-color: lime;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -539,7 +535,6 @@
 .footer-child8 {
   width: 100%;
   height: 90px;
-  background-color: beige;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -556,12 +551,10 @@
 }
 
 .horizontal {
-  width: 1400px;
+  width: 1636px;
   height: 2px;
   border: none;
   background-color: rgba(128, 128, 128, 0.196);
   margin-left: auto;
   margin-right: auto;
 }
-
-
