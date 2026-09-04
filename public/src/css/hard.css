@@ -25,14 +25,14 @@
   align-items: center;
   margin-top: 24px;
 
-  .section3-child {
+  .slider-3 {
     width: 1336px;
     height: 314px;
     display: grid;
     grid-template-columns: 6fr 1fr;
     border-radius: 30px;
     overflow: hidden;
-    background: var(--slider-bg);
+    background: rgb(113, 186, 43) !important;
 
     .swiper {
       width: 100%;
@@ -69,7 +69,7 @@
         flex-direction: column;
         justify-content: space-between;
         padding: 4px 8px 8px;
-        border-bottom-right-radius: 10px;
+
         overflow: hidden;
 
         .swiper-slide-children2-grandchild {
@@ -304,13 +304,7 @@
 }
 
 /* ================= رنگ هر اسلایدر ================= */
-.slider-2 {
-  --slider-bg: linear-gradient(
-    225deg,
-    rgb(210, 44, 78) 0%,
-    rgb(238, 56, 78) 100%
-  );
-}
+
 .slider-3 {
   --slider-bg: linear-gradient(
     225deg,
@@ -320,8 +314,8 @@
 }
 
 /* ================= دکمه‌های اسلایدر قرمز (mySwiper-2) — با JS هماهنگ: nextEl=".swiper-button-next", prevEl=".swiper-button-prev" ================= */
-.mySwiper-2 .swiper-button-next,
-.mySwiper-2 .swiper-button-prev {
+.mySwiper-3 .swiper-button-next,
+.mySwiper-3 .swiper-button-prev {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -340,21 +334,21 @@
     opacity 0.3s ease,
     visibility 0.3s ease;
 }
-.mySwiper-2 .swiper-button-prev {
+.mySwiper-3 .swiper-button-prev {
   left: 10px;
   right: auto;
 }
-.mySwiper-2 .swiper-button-next {
+.mySwiper-3 .swiper-button-next {
   right: 10px;
   left: auto;
 }
-.mySwiper-2 .swiper-button-next.is-visible,
-.mySwiper-2 .swiper-button-prev.is-visible {
+.mySwiper-3 .swiper-button-next.is-visible,
+.mySwiper-3 .swiper-button-prev.is-visible {
   opacity: 1;
   visibility: visible;
 }
-.mySwiper-2 .swiper-button-next::after,
-.mySwiper-2 .swiper-button-prev::after {
+.mySwiper-3 .swiper-button-next::after,
+.mySwiper-3 .swiper-button-prev::after {
   font-size: 44px;
   font-weight: 700;
   color: #d22c4e;
@@ -380,12 +374,13 @@
   transition:
     opacity 0.3s ease,
     visibility 0.3s ease;
+    cursor: pointer;
 }
-.mySwiper-3 .swiper-button-prev-3 {
+.mySwiper-3 .swiper-button-next-3 {
   left: 10px;
   right: auto;
 }
-.mySwiper-3 .swiper-button-next-3 {
+.mySwiper-3 .swiper-button-prev-3 {
   right: 10px;
   left: auto;
 }
@@ -414,5 +409,19 @@
 
 .swiper-slide-children1-border-right {
   border-top-right-radius: 10px;
+  overflow: hidden;
+}
+
+
+
+.start-border{
+  border-top-right-radius: 8px ;
+  border-bottom-right-radius: 8px ;
+  overflow: hidden;
+}
+
+.end-border{
+  border-top-left-radius: 8px ;
+  border-bottom-left-radius: 8px ;
   overflow: hidden;
 }
