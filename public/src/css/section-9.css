@@ -412,20 +412,22 @@
 .swiper-wrapper-tomuch {
   padding: 0;
   margin: 0;
-  background-color: white;
-  
+  background-color: transparent;
 }
 .start-border-1 {
   /* margin-left: 10px !important; */
   border: 1px solid rgba(128, 128, 128, 0.2) !important;
   border-radius: 10px !important;
   overflow: hidden !important;
+  margin-top: -10px;
+
 }
 .swiper-slide-1 {
   /* margin-left: 10px !important; */
   border: 1px solid rgba(128, 128, 128, 0.2) !important;
   border-radius: 10px !important;
   overflow: hidden !important;
+  margin-top: -10px;
 }
 
 .end-border-1 {
@@ -467,3 +469,5 @@
     }
   }
 }
+
+
