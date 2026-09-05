@@ -77,7 +77,32 @@
         height: 124px;
         margin-top: 7px;
         background-color: lightgreen;
+        .mySwiper-f16 {
+          width: 100%;
+          height: 100%;
+          .swiper-wrapper-f16 {
+            width: 100%;
+            height: 100%;
+            .swiper-slide-f16 {
+              text-align: center;
+              font-size: 18px;
+              background: #444;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              
+              .child{
+                width: 40px;
+                height: 100%;
+                background-color: lightblue;
+              }
+            }
+          }
+        }
       }
     }
   }
 }
+/* css for slider start */
+
+/* css for slider end */
