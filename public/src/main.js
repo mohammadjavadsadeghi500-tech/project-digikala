@@ -138,9 +138,55 @@ swiper3.el
   });
 
 // slider favorite section
-var swiper2 = new Swiper(".mySwiper-f16", {
+
+
+var swiper16 = new Swiper(".myswiper-16", {
+  slidesPerView: 9,
+  centeredSlides: false,
+  spaceBetween: 10,
+  slidesOffsetAfter: 10,
+
+  wrapperClass: "section16-wrapper",
+  slideClass: "section16-slide",
+
   navigation: {
-    nextEl: "swiper-button-next-f16",
-    prevEl: "swiper-button-prev-f16",
+    nextEl: ".section16-button-next",
+    prevEl: ".section16-button-prev",
+  },
+
+  pagination: {
+    el: ".section16-pagination",
+    clickable: true,
+  },
+
+  on: {
+    init: function () {
+      updateSection16Buttons(this);
+    },
+
+    slideChange: function () {
+      updateSection16Buttons(this);
+    },
   },
 });
+
+function updateSection16Buttons(swiper) {
+  const nextBtn = swiper.el.querySelector(".section16-button-next");
+  const prevBtn = swiper.el.querySelector(".section16-button-prev");
+
+  if (!nextBtn || !prevBtn) return;
+
+  // دکمه قبلی
+  if (swiper.isBeginning) {
+    prevBtn.classList.remove("is-visible");
+  } else {
+    prevBtn.classList.add("is-visible");
+  }
+
+  // دکمه بعدی
+  if (swiper.isEnd) {
+    nextBtn.classList.remove("is-visible");
+  } else {
+    nextBtn.classList.add("is-visible");
+  }
+}

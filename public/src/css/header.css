@@ -1,0 +1,161 @@
+/* banner start */
+.banner {
+  width: 100%;
+  height: 60px;
+  .banner-digi {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+/* banner end */
+/* header middle start */
+.middle {
+  width: 100%;
+  height: 70px;
+  background-color: lightpink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .child-body {
+    width: 1644px;
+    height: 100%;
+    background-color: lightblue;
+    padding: 12px 0px;
+    display: flex;
+    .left {
+      width: 180px;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .child-1 {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .sale {
+          width: 20px;
+          height: 20px;
+          background-color: red;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 2px solid #fff;
+          border-radius: 6px;
+          .span-sale {
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--color-white);
+          }
+        }
+
+        .gch {
+          width: 20px;
+          height: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .svg-child {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+      .child-2 {
+        width: 1px;
+        height: 24px;
+        background-color: var(--color-neutral-200);
+        margin: 0px 12px;
+        cursor: pointer;
+      }
+      .child-3 {
+        width: 60px;
+        height: 100%;
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        .gch1 {
+          width: 16px;
+          height: 24px;
+
+          .child-b {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transform: translateX(7px);
+            transform: translateY(-3px);
+          }
+        }
+        .gch2 {
+          width: 24px;
+          height: 24px;
+          .child {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            fill: var(--color-icon-high-emphasis);
+          }
+        }
+      }
+      .child-4 {
+        width: 40px;
+        height: 40px;
+        margin-left: 12px;
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        .svg {
+          width: 30px;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .svg-child {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            fill: var(--color-icon-high-emphasis);
+          }
+        }
+      }
+    }
+    .right {
+      width: calc(100% - 180px);
+      height: 100%;
+      background-color: lightgreen;
+      display: flex;
+      align-items: center;
+      .child-right {
+        width: 195px;
+        height: 30px;
+        background-color: darkgoldenrod;
+        .child-right-img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      .child-left {
+        width: calc(100% - 195px);
+        height: 100%;
+        background-color: green;
+      }
+    }
+  }
+}
+
+/* header middle end */

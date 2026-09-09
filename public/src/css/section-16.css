@@ -77,25 +77,36 @@
         height: 124px;
         margin-top: 7px;
         background-color: lightgreen;
-        .mySwiper-f16 {
+        .mySwiper-16 {
           width: 100%;
           height: 100%;
-          .swiper-wrapper-f16 {
+          .section16-wrapper {
             width: 100%;
             height: 100%;
-            .swiper-slide-f16 {
+            background-color: darkblue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+
+            .section16-slide {
+              width: 90px;
+              height: 100%;
               text-align: center;
               font-size: 18px;
-              background: #444;
               display: flex;
               justify-content: center;
               align-items: center;
-              
-              .child{
-                width: 40px;
+              background-color: rebeccapurple;
+              border: 1px solid rgba(128, 128, 128, 0.825);
+              border-radius: 10px;
+              padding: 6px;
+              /* .section16-slide img {
+                display: block;
+                width: 100%;
                 height: 100%;
-                background-color: lightblue;
-              }
+                object-fit: cover;
+              } */
             }
           }
         }
@@ -104,5 +115,15 @@
   }
 }
 /* css for slider start */
-
+.section16-button-next,
+.section16-button-prev {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+.section16-button-next.is-visible,
+.section16-button-prev.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
 /* css for slider end */
