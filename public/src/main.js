@@ -139,7 +139,6 @@ swiper3.el
 
 // slider favorite section
 
-
 var swiper16 = new Swiper(".myswiper-16", {
   slidesPerView: 9,
   centeredSlides: false,
@@ -190,3 +189,6 @@ function updateSection16Buttons(swiper) {
     nextBtn.classList.add("is-visible");
   }
 }
+// section 19 slider
+
+
