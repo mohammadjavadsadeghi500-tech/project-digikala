@@ -36,7 +36,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: row;
-        background-color: beige;
+        /* background-color: beige; */
         padding: 16px 24px;
         gap: 2px;
         .section-16-gch-1-left {
@@ -73,40 +73,66 @@
         }
       }
       .section-16-gch-2 {
-        width: 100%;
+        width: 1302px !important;
         height: 124px;
         margin-top: 7px;
         background-color: lightgreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .mySwiper-16 {
-          width: 100%;
+          width: 1302px !important;
           height: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
           .section16-wrapper {
-            width: 100%;
+            width: 1302px !important;
             height: 100%;
-            background-color: darkblue;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 10px;
+            /* gap: 10px; */
+            position: relative;
 
             .section16-slide {
-              width: 90px;
-              height: 100%;
+              width: 90px !important;
+              height: 124px;
               text-align: center;
               font-size: 18px;
               display: flex;
               justify-content: center;
               align-items: center;
-              background-color: rebeccapurple;
-              border: 1px solid rgba(128, 128, 128, 0.825);
+              flex-direction: column;
+              border: 1px solid rgba(128, 128, 128, 0.125);
               border-radius: 10px;
               padding: 6px;
-              /* .section16-slide img {
-                display: block;
+
+              .img {
+                width: 90px;
+                height: 90px;
+                padding: 12px;
+                .img-child {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: contain;
+                }
+              }
+              .text {
                 width: 100%;
-                height: 100%;
-                object-fit: cover;
-              } */
+                height: 22px;
+                padding: 0px 8px;
+                .text-child {
+                  height: 100%;
+                  width: 100%;
+                  font-size: 12px;
+                  font-weight: 700;
+                  color: var(--color-icon-high-emphasis);
+                  white-space: nowrap;
+                  -webkit-line-clamp: 1;
+                  -webkit-box-orient: vertical;
+                }
+              }
             }
           }
         }
@@ -114,16 +140,104 @@
     }
   }
 }
-/* css for slider start */
-.section16-button-next,
-.section16-button-prev {
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.2s;
+
+.section16-wrapper {
+  /* برای فلش ها نیتنیتبنمیت */
+  .section16-button-next,
+  .section16-button-prev {
+    opacity: 1;
+    pointer-events: none;
+    transition: opacity 0.2s;
+  }
+  .section16-button-next.is-visible,
+  .section16-button-prev.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  /* css for slider end */
+
+  .section16-button-next {
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .next-button {
+      width: 100%;
+      height: 100%;
+      background-color: beige;
+    }
+  }
+
+  .section16-button-prev {
+    width: 24px;
+    height: 24px;
+    .prev-button {
+      width: 100%;
+      height: 100%;
+      background-color: beige;
+    }
+  }
+
+  .section16-button-next,
+  .section16-button-prev {
+    position: absolute;
+    top: 50%;
+    margin-top: 0;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* هر دو دکمه پیش‌فرض محو هستن، فقط با کلاس is-visible نمایان میشن */
+    opacity: 0;
+    visibility: hidden;
+    transition: 300ms;
+    opacity: 0;
+  }
+
+  .section16-button-next {
+    left: 10px !important;
+    right: auto !important;
+  }
+
+  .section16-button-prev {
+    right: 10px !important;
+    left: auto !important;
+  }
+
+  .section16-button-next.is-visible,
+  .section16-button-prev.is-visible {
+    opacity: 1;
+    visibility: visible;
+    width: 32px !important;
+    height: 32px !important;
+    & img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .section16-button-next::after,
+  .section16-button-prev::after {
+    font-size: 44px;
+    font-weight: 700;
+  }
+  .section16-button-disabled {
+    width: 32px !important;
+    height: 32px !important;
+
+    & img {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+  scrollbar-width:auto;
 }
-.section16-button-next.is-visible,
-.section16-button-prev.is-visible {
-  opacity: 1;
-  pointer-events: auto;
-}
-/* css for slider end */

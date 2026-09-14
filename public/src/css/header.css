@@ -329,6 +329,19 @@
         height: 100%;
         display: flex;
         align-items: center;
+        :hover .megamenu {
+          display: block;
+          width: 800px;
+          height: 400px;
+          background-color: black;
+        }
+        .megamenu {
+          display: block;
+          background-color: black;
+          width: 200px;
+          height: 200px;
+          position: absolute;
+        }
         .child-1 {
           width: auto;
           height: 100%;
@@ -411,3 +424,5 @@
   }
 }
 /* header end end */
+
+/* mega menu */

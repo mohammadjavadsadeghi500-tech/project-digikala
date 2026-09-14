@@ -126,69 +126,38 @@ function updateSlider3Buttons(swiper) {
     : nextBtn.classList.add("is-visible");
 }
 
-swiper3.el
-  .querySelector(".swiper-button-next-3")
-  .addEventListener("click", function () {
-    if (swiper3.isEnd) this.classList.remove("is-visible");
-  });
-swiper3.el
-  .querySelector(".swiper-button-prev-3")
-  .addEventListener("click", function () {
-    if (swiper3.isBeginning) this.classList.remove("is-visible");
-  });
+// swiper3.el
+//   .querySelector(".swiper-button-next-3")
+//   .addEventListener("click", function () {
+//     if (swiper3.isEnd) this.classList.remove("is-visible");
+//   });
+// swiper3.el
+//   .querySelector(".swiper-button-prev-3")
+//   .addEventListener("click", function () {
+//     if (swiper3.isBeginning) this.classList.remove("is-visible");
+// });
 
 // slider favorite section
 
-var swiper16 = new Swiper(".myswiper-16", {
+var swiper = new Swiper(".mySwiper-16", {
   slidesPerView: 9,
-  centeredSlides: false,
   spaceBetween: 10,
-  slidesOffsetAfter: 10,
-
-  wrapperClass: "section16-wrapper",
-  slideClass: "section16-slide",
-
   navigation: {
-    nextEl: ".section16-button-next",
-    prevEl: ".section16-button-prev",
-  },
-
-  pagination: {
-    el: ".section16-pagination",
-    clickable: true,
-  },
-
-  on: {
-    init: function () {
-      updateSection16Buttons(this);
-    },
-
-    slideChange: function () {
-      updateSection16Buttons(this);
-    },
+    nextEl: "section16-button-next",
+    prevEl: "section16-button-prev",
   },
 });
 
-function updateSection16Buttons(swiper) {
-  const nextBtn = swiper.el.querySelector(".section16-button-next");
-  const prevBtn = swiper.el.querySelector(".section16-button-prev");
-
-  if (!nextBtn || !prevBtn) return;
-
-  // دکمه قبلی
-  if (swiper.isBeginning) {
-    prevBtn.classList.remove("is-visible");
-  } else {
-    prevBtn.classList.add("is-visible");
-  }
-
-  // دکمه بعدی
-  if (swiper.isEnd) {
-    nextBtn.classList.remove("is-visible");
-  } else {
-    nextBtn.classList.add("is-visible");
-  }
-}
 // section 19 slider
 
-
+var swiper = new Swiper(".mySwiper-grid", {
+  slidesPerView: 4,
+  grid: {
+    rows: 3,
+  },
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

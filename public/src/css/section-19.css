@@ -1,0 +1,121 @@
+.secton-19-body {
+  width: 100%;
+  height: 404px;
+  .section-19-child {
+    width: 1336px;
+    height: 100%;
+    padding: 0px 16px;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.263);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    .child-up {
+      width: 100%;
+      height: 70px;
+      padding: 24px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .box {
+        width: 150px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      .right {
+        width: 25px;
+        height: 25px;
+        .right-svg {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      .left {
+        width: calc(100% - 30px);
+        height: 100%;
+        display: flex;
+        align-items: center;
+        .left-text {
+          font-size: 19px;
+          font-weight: 700;
+        }
+      }
+    }
+    .child-bottom {
+      width: 1302px;
+      height: 312px;
+      .mySwiper-grid {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        .swiper-wrapper-grid {
+          width: 100%;
+          height: 100%;
+          direction: rtl;
+          .swiper-slide-grid {
+            width: 300px !important;
+            height: 88px !important;
+            text-align: center;
+            font-size: 18px;
+
+            /* height: calc((100% - 30px) / 2) !important; */
+
+            /* Center slide text vertically */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .box {
+              width: 100%;
+              height: 100%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              .box-right {
+                width: 88px;
+                height: 52px;
+                .box-img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: contain;
+                }
+              }
+              .box-left {
+                width: calc(100% - 88px);
+                height: 52px;
+                position: relative;
+                display: flex;
+                align-items: center;
+
+                .box-left-text {
+                  font-size: 12px;
+                  font-weight: 400;
+                  color: var(--color-neutral-700);
+                  -webkit-line-clamp: 2;
+                  -webkit-box-orient: vertical;
+                  display: -webkit-box;
+                  overflow: hidden;
+                  line-height: 2;
+                  .number {
+                    width: 22px;
+                    height: 22px;
+                    background-color: red;
+                    display: inline-block;
+                    color: white;
+                    border-radius: 50%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
