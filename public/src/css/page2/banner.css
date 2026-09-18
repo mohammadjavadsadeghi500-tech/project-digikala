@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: IRANYekanWeb;
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
+@font-face {
+  font-family: IRANYekanWeb;
+  src: url(../fonts/IRANYekanWeb.eot);
+  src: url(../fonts/IRANYekanWeb.woff);
+  src: url(../fonts/IRANYekanWeb.ttf);
+  src: url(../fonts/IRANYekanWeb.woff2);
+}
+
+.banner-body {
+  width: 100%;
+  height: 110px;
+  padding: 0px 15px;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 400px;
+
+  .child {
+    width: 100%;
+    height: 100%;
+    background-color: #ebeeed;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row-reverse;
+    padding: 0px 40px;
+    .b-s {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .right {
+      width: 476px;
+      height: 65px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .ch-r {
+        width: 356px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .gch-r {
+          width: 66px;
+          height: 62px;
+          .fresh {
+            width: 100%;
+          }
+        }
+        .gch-l {
+          width: calc(100% - 66px);
+          height: 100%;
+          display: flex;
+          align-items: center;
+          margin-left: 10px;
+        }
+      }
+      .ch-l {
+        width: calc(100% - 356px);
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .gch-body {
+          width: 112px;
+          height: 36px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: green;
+          border-radius: 9999px;
+          .text-b {
+            font-size: 16px;
+            font-weight: 700;
+            color: white;
+          }
+        }
+      }
+    }
+    .left {
+      width: 570px;
+      height: 75px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-flow: row-reverse;
+      gap: 10px;
+      z-index: 4;
+      .body-right {
+        width: auto;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+         gap: 10px;
+        .body-right-child1,
+        .body-right-child2,
+        .body-right-child3,
+        .body-right-child4,
+        .body-right-child5,
+        .body-right-child6 {
+          background-color: white;
+          width: 74px;
+          height: 74px;
+          padding: 8px;
+          border-bottom: 12px;
+          border-radius: 50%;
+          position: relative;
+         
+          .sale-bor {
+            position: absolute;
+            width: 35px;
+            height: 20px;
+            background-color: red;
+            bottom: 0;
+            right: 0;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding: 10px;
+          }
+          img {
+            width: 100%;
+            border-radius: 50%;
+          }
+        }
+      }
+      .body-left {
+        width: calc(100% - 400px);
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .body-left-child {
+          width: 150px;
+          height: 50px;
+          border-radius: 9999px;
+          background-color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .gch-left {
+            width: 148px;
+            height: 50px;
+            padding: 12px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: row-reverse;
+            border-radius: 999px;
+            gap: 10px;
+            .ur {
+              width: 80px;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              .ur-text {
+                font-size: 14px;
+                font-weight: 700;
+                white-space: nowrap;
+                color: green;
+              }
+            }
+            .ul {
+            }
+          }
+        }
+      }
+    }
+  }
+}
