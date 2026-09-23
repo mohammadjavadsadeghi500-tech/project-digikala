@@ -73,27 +73,28 @@
         }
       }
       .section-16-gch-2 {
-        width: 1302px !important;
+        width: 1302px;
         height: 124px;
         margin-top: 7px;
-        background-color: lightgreen;
         display: flex;
-        justify-content: center;
-        align-items: center;
+
         .mySwiper-16 {
-          width: 1302px !important;
+          width: 100% !important;
           height: 100%;
           display: flex;
-          justify-content: space-between;
+          justify-content: center !important;
           align-items: center;
+          margin: 0 auto;
+
           .section16-wrapper {
-            width: 1302px !important;
+            width: 100% !important;
             height: 100%;
             display: flex;
-            justify-content: space-between;
+            justify-content: center !important;
             align-items: center;
-            /* gap: 10px; */
+            gap: 10px;
             position: relative;
+            margin: 0 auto;
 
             .section16-slide {
               width: 90px !important;
@@ -239,5 +240,5 @@
       height: 100% !important;
     }
   }
-  scrollbar-width:auto;
+  scrollbar-width: auto;
 }
