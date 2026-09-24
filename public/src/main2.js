@@ -27,3 +27,4 @@ gchLeft.forEach(function (item) {
     item.classList.toggle("active");
   });
 });
+// slider 1 section 1
