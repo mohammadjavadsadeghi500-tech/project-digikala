@@ -8,7 +8,7 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
-// slider amazing end 
+// slider amazing end
 var swiper = new Swiper(".mySwiper-amazing-end", {
   slidesPerView: 8,
   spaceBetween: 0,
@@ -16,4 +16,14 @@ var swiper = new Swiper(".mySwiper-amazing-end", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
+
+// buttons
+
+const gchLeft = document.querySelectorAll(".gch-left");
+
+gchLeft.forEach(function (item) {
+  item.addEventListener("click", function () {
+    item.classList.toggle("active");
+  });
 });
