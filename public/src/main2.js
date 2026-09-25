@@ -28,3 +28,12 @@ gchLeft.forEach(function (item) {
   });
 });
 // slider 1 section 1
+const gch4 = document.querySelector(".gch4");
+const left_booxx = document.querySelector(".left-booxx");
+
+gch4.addEventListener("mouseenter", () => {
+  left_booxx.style.display = "block";
+});
+gch4.addEventListener("mouseleave", () => {
+  left_booxx.style.display = "none";
+});
