@@ -161,3 +161,25 @@ var swiper = new Swiper(".mySwiper-grid", {
     prevEl: ".swiper-button-prev",
   },
 });
+//  boooottoooon
+document.addEventListener("click", function (e) {
+  const closeBtn = e.target.closest(".close");
+  const childLeft = e.target.closest(".child-left");
+
+  if (closeBtn) {
+    // اگه روی دکمه بستن کلیک شد
+    const activeMap = closeBtn.closest(".active-map");
+    if (activeMap) {
+      activeMap.style.display = "none";
+    }
+    return; // مهم: جلوگیری از اجرای بخش بعدی توی همین کلیک
+  }
+
+  if (childLeft) {
+    // اگه روی هر جای child-left کلیک شد (به‌جز close)
+    const activeMap = childLeft.querySelector(".active-map");
+    if (activeMap) {
+      activeMap.style.display = "flex";
+    }
+  }
+});
