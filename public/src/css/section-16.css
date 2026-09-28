@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: IRANYekanWeb;
+}
+
+.section-16-body {
+  width: 100%;
+  height: 220px;
+
+  margin-top: 24px;
+  margin-bottom: 20px;
+
+  .section-16-parent {
+    width: 1336px;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    .section-16-child {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      align-items: center;
+      border: 1px solid rgba(128, 128, 128, 0.214);
+      border-radius: 24px;
+      .section-16-gch-1 {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        /* background-color: beige; */
+        padding: 16px 24px;
+        gap: 2px;
+        .section-16-gch-1-left {
+          width: calc(100% - 24px);
+          height: 24px;
+          display: flex;
+          justify-content: flex-end;
+          flex-direction: row;
+          align-items: center;
+          margin-right: 5px;
+
+          .section-16-gch-1-left-text {
+            font-size: 21px;
+            font-weight: 500;
+          }
+        }
+        .section-16-gch-1-right {
+          width: 24px;
+          height: 24px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .section-16-gch-1-right-svg {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .section-16-gch-1-right-img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+      .section-16-gch-2 {
+        width: 1302px;
+        height: 124px;
+        margin-top: 7px;
+        display: flex;
+
+        .mySwiper-16 {
+          width: 100% !important;
+          height: 100%;
+          display: flex;
+          justify-content: center !important;
+          align-items: center;
+          margin: 0 auto;
+
+          .section16-wrapper {
+            width: 100% !important;
+            height: 100%;
+            display: flex;
+            justify-content: center !important;
+            align-items: center;
+            gap: 10px;
+            position: relative;
+            margin: 0 auto;
+
+            .section16-slide {
+              width: 90px !important;
+              height: 124px;
+              text-align: center;
+              font-size: 18px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              border: 1px solid rgba(128, 128, 128, 0.125);
+              border-radius: 10px;
+              padding: 6px;
+
+              .img {
+                width: 90px;
+                height: 90px;
+                padding: 12px;
+                .img-child {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: contain;
+                }
+              }
+              .text {
+                width: 100%;
+                height: 22px;
+                padding: 0px 8px;
+                .text-child {
+                  height: 100%;
+                  width: 100%;
+                  font-size: 12px;
+                  font-weight: 700;
+                  color: var(--color-icon-high-emphasis);
+                  white-space: nowrap;
+                  -webkit-line-clamp: 1;
+                  -webkit-box-orient: vertical;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.section16-wrapper {
+  /* برای فلش ها نیتنیتبنمیت */
+  .section16-button-next,
+  .section16-button-prev {
+    opacity: 1;
+    pointer-events: none;
+    transition: opacity 0.2s;
+  }
+  .section16-button-next.is-visible,
+  .section16-button-prev.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  /* css for slider end */
+
+  .section16-button-next {
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .next-button {
+      width: 100%;
+      height: 100%;
+      background-color: beige;
+    }
+  }
+
+  .section16-button-prev {
+    width: 24px;
+    height: 24px;
+    .prev-button {
+      width: 100%;
+      height: 100%;
+      background-color: beige;
+    }
+  }
+
+  .section16-button-next,
+  .section16-button-prev {
+    position: absolute;
+    top: 50%;
+    margin-top: 0;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* هر دو دکمه پیش‌فرض محو هستن، فقط با کلاس is-visible نمایان میشن */
+    opacity: 0;
+    visibility: hidden;
+    transition: 300ms;
+    opacity: 0;
+  }
+
+  .section16-button-next {
+    left: 10px !important;
+    right: auto !important;
+  }
+
+  .section16-button-prev {
+    right: 10px !important;
+    left: auto !important;
+  }
+
+  .section16-button-next.is-visible,
+  .section16-button-prev.is-visible {
+    opacity: 1;
+    visibility: visible;
+    width: 32px !important;
+    height: 32px !important;
+    & img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .section16-button-next::after,
+  .section16-button-prev::after {
+    font-size: 44px;
+    font-weight: 700;
+  }
+  .section16-button-disabled {
+    width: 32px !important;
+    height: 32px !important;
+
+    & img {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+  scrollbar-width: auto;
+}

@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: IRANYekanWeb;
+}
+
+.section-4-parent {
+  width: 100%;
+  height: 240px;
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 16px;
+  margin-top: 24px;
+  .section-4-child {
+    width: 1336px;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+
+    align-items: center;
+
+    .gg {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      .section-4-grandchild {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        border-radius: 16px;
+        .section-4-grandchild-img {
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          & img {
+            width: 100%;
+            height: 100%;
+            border-radius: 16px;
+          }
+        }
+      }
+    }
+  }
+}

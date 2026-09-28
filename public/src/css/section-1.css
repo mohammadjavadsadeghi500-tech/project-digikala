@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: IRANYekanWeb;
+}
+.section-1 {
+  width: 100%;
+  height: 100px;
+  margin: 24px auto 0px;
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0px 16px;
+  /* section 1 product 1 start  */
+  .products-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 1306px;
+    height: 100%;
+    align-items: center;
+
+    .text-decor {
+      text-decoration: none;
+    }
+    .products-1-ch {
+      display: flex;
+
+      width: 96px;
+      height: 77px;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      text-decoration: none;
+
+      .products-1-ch-ch1-text {
+        margin: 0px;
+        color: var(--color-neutral-700);
+      }
+
+      .products-1-ch-ch1 {
+        background-color: #f0f0f1;
+        margin-top: 0px;
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        .products-1-ch-ch1-svg {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          display: block;
+        }
+
+        .products-1-ch-ch1-svg-1 {
+          object-fit: cover;
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+  /* section 1 product 1 end  */
+}
